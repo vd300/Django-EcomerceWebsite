@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Product
 from math import ceil
 
+
 def index(request):
     products = Product.objects.all()
     print(products)
